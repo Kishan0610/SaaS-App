@@ -28,19 +28,20 @@ def about_view(request, *args, **kwargs):
     PageVisit.objects.create(path=request.path)
     return render(request, html_template, my_context)
 
-def old_home_page_view(request, *args, **kwargs):
+def my_old_home_page_view(request, *args, **kwargs):
     my_title = "My Page"
     my_context = {
         "page_title": my_title
     }
     html_ = """
     <!DOCTYPE html>
-        <html>
-        <title></title>
-        <body>
-            <h1>Is this Anything?</h1>
-        </body>
-        </html>
+    <html>
 
-    """.format(**my_context)
+    <body>
+        <h1>{page_title} anything?</h1>
+    </body>
+    </html>    
+    """.format(**my_context) # page_title=my_title
+        # html_file_path = this_dir / "home.html"
+        # html_ = html_file_path.read_text()
     return HttpResponse(html_)
