@@ -112,15 +112,15 @@ if DATABASE_URL is not None:
 # from os import getenv
 # from dotenv import load_dotenv
 
-# # Replace the DATABASES section of your settings.py with this
+# Replace the DATABASES section of your settings.py with this
 # DATABASES = {
 #   'default': {
 #     'ENGINE': 'django.db.backends.postgresql',
-#     'NAME': getenv('PGDATABASE'),
-#     'USER': getenv('PGUSER'),
-#     'PASSWORD': getenv('PGPASSWORD'),
-#     'HOST': getenv('PGHOST'),
-#     'PORT': getenv('PGPORT', 5432),
+#     'NAME': config('PGDATABASE'),
+#     'USER': config('PGUSER'),
+#     'PASSWORD': config('PGPASSWORD'),
+#     'HOST': config('PGHOST'),
+#     'PORT': config('PGPORT', 5432),
 #     'OPTIONS': {
 #       'sslmode': 'require',
 #     },
