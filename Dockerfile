@@ -54,7 +54,8 @@ ENV DJANGO_DEBUG=${DJANGO_DEBUG}
 # such as:
 RUN python manage.py vendor_pull
 RUN python manage.py collectstatic --noinput
-# whitenoise -> s3
+
+# Whitenoise -> s3
 
 
 # set the Django default project name
