@@ -71,9 +71,10 @@ INSTALLED_APPS = [
 
     # my-apps
     "commando",
-    "visits"
+    "visits",
 
     # Third-Party Apps
+    "django.contrib.sites",
     'allauth',
     'allauth.account',
     'allauth.socialaccount'
@@ -87,8 +88,7 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    # Add the account middleware:
-    "allauth.account.middleware.AccountMiddleware",
+    "allauth.account.middleware.AccountMiddleware", # new
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
