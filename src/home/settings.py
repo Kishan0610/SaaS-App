@@ -74,7 +74,6 @@ INSTALLED_APPS = [
     "visits",
 
     # Third-Party Apps
-    "django.contrib.sites",
     'allauth',
     'allauth.account',
     'allauth.socialaccount'
