@@ -74,10 +74,15 @@ INSTALLED_APPS = [
     "visits",
 
     # Third-Party Apps
+    'allauth_ui',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount'
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
+    'widget_tweaks',
+    'slippers',
 ]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -174,6 +179,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Django Allauth Config
+LOGIN_REDIRECT_URL = "/"
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_SUBJECT_PREFIX = "[KISHAN] "
+ACCOUNT_EMAIL_REQUIRED=True
+
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -183,7 +194,11 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {}
+SOCIALACCOUNT_PROVIDERS = {
+    "github":{
+        "VERIFIED_EMAIL": True
+    }
+}
 
 
 # Internationalization
