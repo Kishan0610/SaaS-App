@@ -71,6 +71,8 @@ INSTALLED_APPS = [
 
     # my-apps
     "commando",
+    "profiles",
+    "subscriptions",
     "visits",
 
     # Third-Party Apps
