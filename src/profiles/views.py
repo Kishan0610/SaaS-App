@@ -18,6 +18,9 @@ def profile_detail_view(request, username=None, *args, **kwargs):
     user = request.user
     print(
         user.has_perm("subscriptions.basic"),
+        user.has_perm("subscriptions.basic_ai"),
+        user.has_perm("subscriptions.pro"),
+        user.has_perm("subscriptions.adbanced"),
         )
     # user_groups = user.groups.all()
     # print("user_groups", user_groups)
