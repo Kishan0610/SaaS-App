@@ -24,10 +24,10 @@ jobs:
         run: |
           MY_GEN_KEY=$(openssl rand -base64 32)
           echo "DJANGO_SECRET_KEY=$MY_GEN_KEY" >> $GITHUB_ENV
-        name: Show DATABASE_URL
-          run |
-            echo ${{ env.DATABASE_URL }}
-            echo $DATABASE_URL
+      - name: Show DATABASE_URL
+        run: |
+          echo ${{ env.DATABASE_URL }}
+          echo $DATABASE_URL
       - name: Install Requirements
         run: |
           python -m pip install pip --upgrade
