@@ -7,6 +7,8 @@ from checkouts import views as checkout_views
 from landing import views as landing_views
 from .views import home_view, about_view, pw_protected_view, user_only_view, staff_only_view
 
+admin.site.site_header = 'SaaS App'
+
 urlpatterns = [
     path("", landing_views.landing_dashboard_page_view, name='home'), 
     path("checkout/sub-price/<int:price_id>/", checkout_views.product_price_redirect_view, name="sub-price-checkout"),
