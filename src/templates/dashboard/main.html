@@ -6,53 +6,51 @@
 
 {% block content %}
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-    <div
-      class="border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-    ></div>
+
+
+<!-- Features Section -->
+<section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Why Choose Us?</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-blue-500 text-4xl mb-4">⚙️</div>
+              <h3 class="text-xl font-semibold mb-2">Fully Automated</h3>
+              <p class="text-gray-600">Automate workflows and processes to reduce manual tasks and save time.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-teal-500 text-4xl mb-4">🔒</div>
+              <h3 class="text-xl font-semibold mb-2">Secure and Scalable</h3>
+              <p class="text-gray-600">Our platform is built with enterprise-grade security and scales with your needs.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-purple-500 text-4xl mb-4">📈</div>
+              <h3 class="text-xl font-semibold mb-2">Real-Time Analytics</h3>
+              <p class="text-gray-600">Get insights and reports in real-time to make data-driven decisions.</p>
+          </div>
+      </div>
   </div>
-  <div
-    class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-  ></div>
-  <div class="grid grid-cols-2 gap-4 mb-4">
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-  </div>
-  <div
-    class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-  ></div>
-  <div class="grid grid-cols-2 gap-4">
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-    <div
-      class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-    ></div>
-  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-20 bg-blue-500 text-white text-center">
+  <h2 class="text-4xl font-bold mb-6">Take Control of Your Business</h2>
+  <p class="text-lg mb-10">Sign up today and explore all the features of our SaaS platform. Start your journey with a free trial and scale as you grow!</p>
+  <a href="#" class="bg-teal-200 text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-teal-300 transition duration-300">
+      Get Started for Free
+  </a>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="py-8 bg-gray-800 text-center text-white">
+  <p>&copy; 2024 SaaS Application. All Rights Reserved.</p>
+</footer>
 
 {% endblock content %}

@@ -9,6 +9,7 @@ class SubscriptionPrice(admin.StackedInline): # TabularInline
     can_delete = False
     extra = 0   
 
+
 class SubscriptionAdmin(admin.ModelAdmin):
     inlines = [SubscriptionPrice]
     list_display = ['name', 'active']

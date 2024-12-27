@@ -234,6 +234,9 @@ class UserSubscription(models.Model):
 
     objects = UserSubscriptionManager()
 
+    def __str__(self):
+        return f"{self.user} - {self.subscription}"
+
     def get_absolute_url(self):
         return reverse("user_subscription")
 
